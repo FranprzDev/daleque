@@ -13,24 +13,51 @@ const Index = () => {
       <SpaceBackground />
       <Hero />
       
-      <ContentSection
-        title="Nuestra Visión"
-        content="Ser el líder global en soluciones tecnológicas para la transformación digital empresarial, facilitando la adaptación y el cumplimiento normativo a través de innovación constante y excelencia operativa."
-        icon={<Target size={48} />}
-      />
-      
-      <ContentSection
-        title="Nuestra Misión"
-        content="Simplificar la complejidad de los procesos empresariales mediante soluciones tecnológicas integrales, permitiendo a las organizaciones focalizarse en su crecimiento mientras nosotros nos encargamos de mantenerlas al día con las regulaciones cambiantes."
-        icon={<Compass size={48} />}
-        inverse={true}
-      />
-      
-      <ContentSection
-        title="Nuestros Objetivos"
-        content="Desarrollar soluciones innovadoras que simplifiquen la gestión empresarial, garantizar el cumplimiento normativo global, y potenciar la eficiencia operativa de nuestros clientes mediante la automatización inteligente y la transformación digital."
-        icon={<Rocket size={48} />}
-      />
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 0.8 }}
+      >
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, type: "spring" }}
+          viewport={{ once: true }}
+        >
+          <ContentSection
+            title="Nuestra Visión"
+            content="Ser el líder global en soluciones tecnológicas para la transformación digital empresarial, facilitando la adaptación y el cumplimiento normativo a través de innovación constante y excelencia operativa."
+            icon={<Target size={48} />}
+          />
+        </motion.div>
+        
+        <motion.div
+          initial={{ x: 100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, type: "spring" }}
+          viewport={{ once: true }}
+        >
+          <ContentSection
+            title="Nuestra Misión"
+            content="Simplificar la complejidad de los procesos empresariales mediante soluciones tecnológicas integrales, permitiendo a las organizaciones focalizarse en su crecimiento mientras nosotros nos encargamos de mantenerlas al día con las regulaciones cambiantes."
+            icon={<Compass size={48} />}
+            inverse={true}
+          />
+        </motion.div>
+        
+        <motion.div
+          initial={{ x: -100, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.8, type: "spring" }}
+          viewport={{ once: true }}
+        >
+          <ContentSection
+            title="Nuestros Objetivos"
+            content="Desarrollar soluciones innovadoras que simplifiquen la gestión empresarial, garantizar el cumplimiento normativo global, y potenciar la eficiencia operativa de nuestros clientes mediante la automatización inteligente y la transformación digital."
+            icon={<Rocket size={48} />}
+          />
+        </motion.div>
+      </motion.div>
       
       <Footer />
     </div>
