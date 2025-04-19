@@ -2,11 +2,13 @@
 import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import ContentSection from "../components/ContentSection";
+import SpaceBackground from "../components/SpaceBackground";
 import { Target, Compass, Rocket } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="bg-space-dark">
+    <div className="bg-space-dark relative">
+      <SpaceBackground />
       <Hero />
       
       <ContentSection
