@@ -1,4 +1,3 @@
-
 import type { Config } from "tailwindcss";
 
 export default {
@@ -21,11 +20,16 @@ export default {
     extend: {
       colors: {
         space: {
-          dark: "#0C1445", // Deep midnight blue
-          primary: "#1E3A8A", // Rich navy blue
-          secondary: "#1D4ED8", // Deep blue
-          accent: "#3B82F6", // Bright blue
-          light: "#F0F9FF", // Very soft, pale blue instead of white
+          dark: "#1a0f2e", // Deep purple background
+          primary: "#2a1b4a", // Rich purple
+          secondary: "#4a1f3d", // Dark magenta
+          accent: "#ff6b6b", // Bright coral red
+          light: "#c4b5fd", // Soft lavender
+          nebula: {
+            blue: "#7c93d6",
+            red: "#ff4d6d",
+            purple: "#9d4edd",
+          }
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -38,7 +42,8 @@ export default {
         },
       },
       backgroundImage: {
-        'space-gradient': 'linear-gradient(to bottom right, #0C1445, #1E3A8A, #3B82F6)',
+        'space-gradient': 'linear-gradient(to bottom right, #1a0f2e, #2a1b4a, #4a1f3d)',
+        'nebula-pattern': "url('/lovable-uploads/53959043-8fd9-4b45-82d2-dabb8aef8919.png')",
       },
     },
   },

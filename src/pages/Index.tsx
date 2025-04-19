@@ -3,11 +3,13 @@ import { motion } from "framer-motion";
 import Hero from "../components/Hero";
 import ContentSection from "../components/ContentSection";
 import SpaceBackground from "../components/SpaceBackground";
+import Footer from "../components/Footer";
 import { Target, Compass, Rocket } from "lucide-react";
 
 const Index = () => {
   return (
-    <div className="bg-space-dark relative">
+    <div className="bg-space-dark relative min-h-screen">
+      <div className="absolute inset-0 bg-nebula-pattern bg-cover bg-center opacity-20 mix-blend-overlay" />
       <SpaceBackground />
       <Hero />
       
@@ -29,6 +31,8 @@ const Index = () => {
         content="Desarrollar soluciones innovadoras que simplifiquen la gestión empresarial, garantizar el cumplimiento normativo global, y potenciar la eficiencia operativa de nuestros clientes mediante la automatización inteligente y la transformación digital."
         icon={<Rocket size={48} />}
       />
+      
+      <Footer />
     </div>
   );
 };

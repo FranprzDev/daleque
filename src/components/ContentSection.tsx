@@ -15,14 +15,14 @@ const ContentSection = ({ title, content, icon, inverse = false }: ContentSectio
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8 }}
       viewport={{ once: true }}
-      className={`py-20 ${inverse ? 'bg-space-dark text-space-light' : 'bg-space-primary text-space-light'}`}
+      className={`py-20 ${inverse ? 'bg-space-primary/90' : 'bg-space-secondary/90'} backdrop-blur-sm`}
     >
       <div className="container mx-auto px-4">
         <div className={`flex flex-col md:flex-row items-center gap-12 ${inverse ? 'md:flex-row-reverse' : ''}`}>
           <div className="flex-1">
-            <div className="text-space-accent mb-6">{icon}</div>
-            <h2 className="text-4xl font-bold mb-6">{title}</h2>
-            <p className="text-lg leading-relaxed">{content}</p>
+            <div className="text-space-nebula-blue mb-6">{icon}</div>
+            <h2 className="text-4xl font-bold mb-6 text-space-light">{title}</h2>
+            <p className="text-lg leading-relaxed text-space-light/90">{content}</p>
           </div>
           <div className="flex-1 flex justify-center">
             <motion.div
@@ -30,9 +30,9 @@ const ContentSection = ({ title, content, icon, inverse = false }: ContentSectio
               transition={{ duration: 50, repeat: Infinity, ease: "linear" }}
               className="relative w-64 h-64"
             >
-              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-space-accent to-space-secondary opacity-20 blur-xl" />
-              <div className="absolute inset-4 rounded-full bg-gradient-to-r from-space-accent to-space-secondary opacity-40 blur-lg" />
-              <div className="absolute inset-8 rounded-full bg-gradient-to-r from-space-accent to-space-secondary opacity-60 blur-md" />
+              <div className="absolute inset-0 rounded-full bg-gradient-to-r from-space-nebula-blue to-space-nebula-red opacity-20 blur-xl" />
+              <div className="absolute inset-4 rounded-full bg-gradient-to-r from-space-nebula-purple to-space-nebula-red opacity-40 blur-lg" />
+              <div className="absolute inset-8 rounded-full bg-gradient-to-r from-space-nebula-blue to-space-nebula-purple opacity-60 blur-md" />
             </motion.div>
           </div>
         </div>
