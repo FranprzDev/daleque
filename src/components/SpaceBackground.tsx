@@ -17,7 +17,7 @@ const SpaceBackground = () => {
             ease: "linear"
           }
         }}
-        className="absolute text-space-blue/30"
+        className="absolute text-space-secondary/30"
       >
         <Rocket size={48} className="rotate-45" />
       </motion.div>
@@ -34,14 +34,14 @@ const SpaceBackground = () => {
             delay: 5
           }
         }}
-        className="absolute text-space-red/30"
+        className="absolute text-space-accent/30"
       >
         <Rocket size={32} className="-rotate-45" />
       </motion.div>
 
       {/* Exoplanetas */}
       <motion.div 
-        className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-pink-500/30 to-purple-500/30 blur-xl"
+        className="absolute w-32 h-32 rounded-full bg-gradient-to-br from-space-primary/30 to-space-secondary/30 blur-xl"
         animate={{
           scale: [1, 1.2, 1],
           transition: {
@@ -57,7 +57,7 @@ const SpaceBackground = () => {
       />
 
       <motion.div 
-        className="absolute w-40 h-40 rounded-full bg-gradient-to-br from-blue-500/20 to-cyan-500/20 blur-xl"
+        className="absolute w-40 h-40 rounded-full bg-gradient-to-br from-space-accent/20 to-space-dark/20 blur-xl"
         animate={{
           scale: [1.2, 1, 1.2],
           transition: {

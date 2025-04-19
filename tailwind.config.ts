@@ -21,10 +21,11 @@ export default {
     extend: {
       colors: {
         space: {
-          dark: "#1A1F2C",
-          blue: "#33C3F0",
-          red: "#DC143C",
-          light: "#E5E7EB",
+          dark: "#0C1445", // Deep midnight blue
+          primary: "#1E3A8A", // Rich navy blue
+          secondary: "#1D4ED8", // Deep blue
+          accent: "#3B82F6", // Bright blue
+          light: "#F0F9FF", // Very soft, pale blue instead of white
         },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
@@ -35,52 +36,11 @@ export default {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
         },
-        secondary: {
-          DEFAULT: "hsl(var(--secondary))",
-          foreground: "hsl(var(--secondary-foreground))",
-        },
-        destructive: {
-          DEFAULT: "hsl(var(--destructive))",
-          foreground: "hsl(var(--destructive-foreground))",
-        },
-        muted: {
-          DEFAULT: "hsl(var(--muted))",
-          foreground: "hsl(var(--muted-foreground))",
-        },
-        accent: {
-          DEFAULT: "hsl(var(--accent))",
-          foreground: "hsl(var(--accent-foreground))",
-        },
-        popover: {
-          DEFAULT: "hsl(var(--popover))",
-          foreground: "hsl(var(--popover-foreground))",
-        },
-        card: {
-          DEFAULT: "hsl(var(--card))",
-          foreground: "hsl(var(--card-foreground))",
-        },
       },
-      keyframes: {
-        "accordion-down": {
-          from: { height: "0" },
-          to: { height: "var(--radix-accordion-content-height)" },
-        },
-        "accordion-up": {
-          from: { height: "var(--radix-accordion-content-height)" },
-          to: { height: "0" },
-        },
-        float: {
-          "0%, 100%": { transform: "translateY(0)" },
-          "50%": { transform: "translateY(-20px)" },
-        },
-      },
-      animation: {
-        "accordion-down": "accordion-down 0.2s ease-out",
-        "accordion-up": "accordion-up 0.2s ease-out",
-        float: "float 6s ease-in-out infinite",
+      backgroundImage: {
+        'space-gradient': 'linear-gradient(to bottom right, #0C1445, #1E3A8A, #3B82F6)',
       },
     },
   },
   plugins: [require("tailwindcss-animate")],
 } satisfies Config;
-
