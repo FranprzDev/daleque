@@ -4,6 +4,7 @@ import Hero from "../components/Hero";
 import ContentSection from "../components/ContentSection";
 import SpaceBackground from "../components/SpaceBackground";
 import Footer from "../components/Footer";
+import PodioSection from "../components/PodioSection";
 import { Target, Compass, Rocket } from "lucide-react";
 
 const Index = () => {
@@ -59,9 +60,13 @@ const Index = () => {
         </motion.div>
       </motion.div>
       
+      {/* Sección PODIO agregada */}
+      <PodioSection />
+
       <Footer />
     </div>
   );
 };
 
 export default Index;
+
