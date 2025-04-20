@@ -2,45 +2,45 @@
 import { motion } from "framer-motion";
 import React from "react";
 
-// Colores de la paleta espacial actual
+// Nueva definición PODIO para tu empresa
 const podioData = [
   {
     letter: "P",
-    title: "Prioridad",
+    title: "Planificar",
     description:
-      "Detectamos lo fundamental: soluciones tecnológicas que realmente potencian y simplifican la transformación digital de nuestros clientes. Nuestra prioridad es acompañar y generar valor desde el minuto cero.",
+      "Definimos estrategias claras, anticipando necesidades y definiendo metas concretas para que nuestros proyectos tecnológicos generen impacto real. En cada planificación priorizamos los objetivos del cliente y la innovación permanente.",
     gradient: "from-[#9b87f5] to-[#7E69AB]",
     ring: "ring-[#9b87f5]/10"
   },
   {
     letter: "O",
-    title: "Objetivo",
+    title: "Organizar",
     description:
-      "El objetivo es claro: que las organizaciones crezcan y evolucionen de manera segura, cumpliendo fácilmente con las normativas, a través de innovación y excelencia operativa.",
+      "Estructuramos equipos y recursos de forma eficiente. Ordenamos la información y asignamos roles claros para que cada miembro aporte al avance colectivo, garantizando fluidez y rapidez en cada fase del proyecto.",
     gradient: "from-[#33C3F0] to-[#6E59A5]",
     ring: "ring-[#33C3F0]/10"
   },
   {
     letter: "D",
-    title: "Dificultades",
+    title: "Dirigir",
     description:
-      "Aceptamos los desafíos: la tecnología cambia, las regulaciones también. Convertimos esos obstáculos en oportunidades únicas para automatizar, integrar y asegurar el éxito de cada proyecto.",
+      "Guiamos al equipo con liderazgo y empatía, inspirando compromiso y responsabilidad. Supervisamos objetivos y motivamos la excelencia en cada entrega, siempre alineados con los valores y la visión de nuestra empresa.",
     gradient: "from-[#D6BCFA] to-[#8E9196]",
     ring: "ring-[#8E9196]/10"
   },
   {
     letter: "I",
-    title: "Ideas",
+    title: "Integrar",
     description:
-      "Fomentamos la creatividad: escuchamos ideas de todo el equipo y de nuestros clientes. Innovar juntos nos permite derribar barreras tecnológicas y evolucionar constantemente.",
+      "Unimos diferentes áreas, perspectivas y tecnologías para crear soluciones integrales. Fomentamos la colaboración y la escucha activa, asegurando un ambiente de trabajo donde la diversidad suma al éxito final.",
     gradient: "from-[#7c93d6] to-[#9b87f5]",
     ring: "ring-[#7c93d6]/10"
   },
   {
     letter: "O",
-    title: "Organización",
+    title: "Control",
     description:
-      "Trabajamos de manera ágil y colaborativa. Asignamos roles claros, promovemos la participación y aseguramos que cada integrante aporte al éxito colectivo y al crecimiento de dalequesosvos.",
+      "Monitoreamos avances y resultados en tiempo real, ajustando procesos para maximizar la calidad y la eficiencia. Analizamos riesgos y aplicamos mejoras continuas, garantizando que cada proyecto cumpla los estándares más altos.",
     gradient: "from-[#1A1F2C] to-[#33C3F0]",
     ring: "ring-[#1A1F2C]/10"
   },
@@ -67,7 +67,7 @@ const PodioPlan = () => (
     <div className="flex flex-col gap-12 w-full max-w-lg mx-auto">
       {podioData.map((item, idx) => (
         <motion.div
-          key={item.letter}
+          key={item.letter + item.title}
           initial={{ opacity: 0, y: 80 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{
@@ -107,3 +107,4 @@ const PodioPlan = () => (
 );
 
 export default PodioPlan;
+
