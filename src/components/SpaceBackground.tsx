@@ -1,5 +1,6 @@
+
 import { motion } from "framer-motion";
-import { Rocket, Meteor } from "lucide-react";
+import { Rocket, Star } from "lucide-react";
 
 const SpaceBackground = () => {
   return (
@@ -20,7 +21,7 @@ const SpaceBackground = () => {
         className="absolute"
       >
         <div className="relative">
-          <Meteor size={48} className="text-space-accent rotate-45" />
+          <Star size={48} className="text-space-accent rotate-45" />
           <motion.div
             className="absolute top-0 left-0 w-32 h-32 bg-gradient-to-br from-space-accent via-space-accent/50 to-transparent blur-xl"
             animate={{
