@@ -1,5 +1,7 @@
 ## Sovos (Daleque)
 
+Trabajo de la materia **Administración de Recursos** (UTN-FRT): análisis organizacional de una empresa ficticia de cumplimiento fiscal (misión, visión, estructura, planificación e integración).
+
 **Misión:** Simplificar el cumplimiento tributario y fiscal de empresas en América Latina a través de soluciones tecnológicas integradas que garanticen transparencia, seguridad y actualización constante ante los cambios normativos.
 
 **Visión:** Ser la plataforma líder en soluciones de cumplimiento fiscal digital en América Latina, respaldando a empresas de todos los tamaños para operar con confianza en un entorno regulatorio en evolución constante.
